@@ -76,4 +76,9 @@ then
 elif [ $action = "delete" ]
 then
 	delete_user
+elif [ $action = "load" ]
+then
+	reset_table
+	add_previous_user
+	filter_table
 fi
